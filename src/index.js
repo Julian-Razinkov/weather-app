@@ -43,10 +43,6 @@ app.get('/help', (req,res) =>{
     })
 })
 
-app.get('/ip', (req, res) => {
-    res.send(req.ip);
-})
-
 app.get('/weather', (req, res) =>{
     
     if(req.query.adress === undefined){
