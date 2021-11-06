@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+header{
+    margin-top: 16px;
+    margin-bottom: 46px;
+}
+h1{
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+.topnav__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.topnav__item a {
+    color: #888;
+    text-decoration: none;
+}
+footer{
+    color: #888;
+    border-top: 1px solid #eee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+.hero{
+    height: 70vh;
+}
+.error{
+    background-color: rgb(211, 36, 36);
+    color: #fff;
+}
+
+input {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+button {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color:#ccc;
+    color: #fff;
+    padding: 8px;
+}
+
+.location__paragraph{
+    margin-top: 15px;   
+    margin-bottom: 10px;
+}
