@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     const location = search.value;
     forecastParagraph.innerText = "Loading...";
-    fetch(`http://localhost:3000/weather?adress=${encodeURIComponent(location)}`).then((res) => {
+    fetch(`/weather?adress=${encodeURIComponent(location)}`).then((res) => {
     res.json().then((data) => {
         if(data.err){
             return forecastParagraph.innerText = "Eror: Please provide a correct value"
