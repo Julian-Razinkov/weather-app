@@ -70,15 +70,7 @@ app.get('/weather', (req, res) =>{
     })
 })
 
-//404 pages render
-app.get('/help/*', (req, res) => {
-   res.render('404', {
-       title: "404",
-       errorMessage: "Help page not found",
-       name: "Julian"
-   })
-})
-
+//404 page render
 app.get('*', (req, res) => {
     res.render('404', {
         title: "404",
