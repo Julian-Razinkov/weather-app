@@ -14,7 +14,7 @@ form.addEventListener('submit', (e) => {
             return forecastParagraph.innerText = "Eror: Please provide a correct value"
         }
         locationParagraph.innerText = data.location;
-        forecastParagraph.innerText = `It\`s ${data.description}. It\`s currently ${data.currentTemperature} degrees, feels like ${data.fellsLike} degrees. Rain probability is ${data.precipProbability * 10}% `;
+        forecastParagraph.innerText = `It\`s ${data.description}. It\`s currently ${data.currentTemperature} degrees, feels like ${data.fellsLike} degrees. Rain probability is ${data.precipProbability * 100}%. Humidity is ${data.humidity} %. `;
     })
 
     

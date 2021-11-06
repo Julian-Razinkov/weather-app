@@ -55,7 +55,7 @@ app.get('/weather', (req, res) =>{
         if(err){
             return res.send({err})
         }
-        forecast(latitude, longitude, (err, {currentTemperature, fellsLike, description, precipProbability}) => {
+        forecast(latitude, longitude, (err, {currentTemperature, fellsLike, description, precipProbability, humidity}) => {
             if(err){ 
                return res.send(err)
             }
@@ -64,7 +64,8 @@ app.get('/weather', (req, res) =>{
                 currentTemperature, 
                 fellsLike, 
                 description,
-                precipProbability
+                precipProbability,
+                humidity
             })
         })
     })

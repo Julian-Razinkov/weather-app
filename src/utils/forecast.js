@@ -13,6 +13,7 @@ const forecast = (lon, lat, callback) => {
                 fellsLike: body.current.feelslike,
                 description: body.current.weather_descriptions[0],
                 precipProbability: body.current.precip,
+                humidity: body.current.humidity
             })
         }
 
